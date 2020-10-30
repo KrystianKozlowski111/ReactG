@@ -1,18 +1,7 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import Header from '../components/Header';
 
-import { Header } from './Header';
-
-export default {
-  title: 'Example/Header',
-  component: Header,
-};
-
-const Template = (args) => <Header {...args} />;
-
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  user: {},
-};
-
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+storiesOf('Header', module).add('with test value', () => (
+  <Header>test value</Header>
+));
