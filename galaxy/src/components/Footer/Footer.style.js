@@ -1,56 +1,96 @@
 import styled from 'styled-components';
 export const Footercontainer = styled.section`
   display: flex;
-  align-items: center;
-  max-width: 1110px;
-  height: 240px;
+  align-items: base-line;
   margin: auto;
-  background: #515151;
-
+  max-width: 1170px;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 59px 0px 41px 0px;
+`;
+export const MainContainer = styled.section`
+  display: block;
+  width: 100%;
+  background: #515151;
+`;
+export const BottomContainer = styled.section`
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 1170px;
+  justify-content: space-between;
+  padding: 35px 0px;
 `;
 export const Image = styled.div`
-  width: 74.31px;
-  height: 23.18px;
-  margin-left: 125px;
-  top: 59px;
+  object-fit: contain;
+  margin: auto 0;
 `;
 export const Menu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  left: 23.01%;
-  right: 37.28%;
-  top: 97.47%;
-  bottom: 2.11%;
+  gap: 59px;
 `;
-export const Menutext = styled.p`
-  font-family: Fira Sans;
+export const MenuFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 43px;
+`;
+export const SocialMenu = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+`;
+export const Menutext = styled.a`
+  font-family: Fira Sans, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 200;
   line-height: 28px;
-
+  text-decoration: none;
+  font-size: 18px;
   text-align: center;
-
   color: #ffffff;
 `;
+export const FooterText = styled.a`
+  font-family: Fira Sans, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 28px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.4;
+`;
 export const Form = styled.div`
-  width: 285px;
-  height: 40px;
-  left: 948px;
-  top: 6557px;
+  display: flex;
+  align-items: center;
 `;
 export const Inputf = styled.input`
-  left: 69.71%;
-  right: 17.79%;
-  top: 97.31%;
-  bottom: 2.09%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: Fira Sans, sans-serif;
+  display: inline-block;
+  line-height: 28px;
+  margin-right: 15px;
+  &::placeholder {
+    color: #222222;
+    line-height: 28px;
+    opacity: 0.5;
+  }
 `;
 export const Button = styled.button`
-  left: 83.31%;
-  right: 9.34%;
-  top: 97.31%;
-  bottom: 2.09%;
+  display: inline-block;
+  padding: 13px;
+  font-family: Fira Sans, sans-serif;
+  line-height: 24px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #c6b393;
+  outline: 0;
+
+  border: 1px solid #000000;
 `;

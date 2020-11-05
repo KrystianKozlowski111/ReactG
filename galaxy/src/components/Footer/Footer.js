@@ -7,30 +7,64 @@ import {
   Menu,
   Image,
   Button,
+  MainContainer,
+  BottomContainer,
+  FooterText,
+  MenuFooter,
+  SocialMenu,
 } from './Footer.style';
 import GravityLogo from '../../assets/images/GravityLogo.svg';
-import SendButton from '../../assets/images/SendButton.svg';
+import Twitter from '../../assets/images/Twitter.svg';
+import Linkedin from '../../assets/images/Linkedin.svg';
+import Google from '../../assets/images/Google.svg';
+import Face from '../../assets/images/Face.svg';
 const Footer = () => {
   return (
-    <Footercontainer>
-      <Image>
-        <img src={GravityLogo} className="App-GravityLogo" alt="GravityLogo" />
-      </Image>
-      <Menu>
-        <Menutext>Travel</Menutext>
-        <Menutext>Explore</Menutext>
-        <Menutext>Works</Menutext>
-        <Menutext>About Us</Menutext>
-        <Menutext>Contacts</Menutext>
-      </Menu>
-      <Form>
-        <label for="fname"></label>
-        <Inputf type="text" id="fname" placeholder="Your email" />
-        <Button>
-          <img src={SendButton} className="App-SendButton" alt="SendButton" />
-        </Button>
-      </Form>
-    </Footercontainer>
+    <MainContainer>
+      <Footercontainer>
+        <Image>
+          <img
+            src={GravityLogo}
+            className="App-GravityLogo"
+            alt="GravityLogo"
+          />
+        </Image>
+        <Menu>
+          <Menutext href="#">Travel</Menutext>
+          <Menutext href="#">Explore</Menutext>
+          <Menutext href="#">Works</Menutext>
+          <Menutext href="#">About Us</Menutext>
+          <Menutext href="#">Contacts</Menutext>
+        </Menu>
+        <Form>
+          <label for="fname"></label>
+          <Inputf type="text" id="fname" placeholder="Your email" />
+          <Button>SEND</Button>
+        </Form>
+      </Footercontainer>
+      <BottomContainer>
+        <MenuFooter>
+          <FooterText href="#">Terms</FooterText>
+          <FooterText href="#">Promo</FooterText>
+          <FooterText href="#">Download</FooterText>
+          <FooterText href="#">News</FooterText>
+        </MenuFooter>
+        <SocialMenu>
+          <FooterText href="#">
+            <img src={Twitter} className="App-Twitter" alt="Twitter" />
+          </FooterText>
+          <FooterText href="#">
+            <img src={Linkedin} className="App-Linkedin" alt="Linkedin" />
+          </FooterText>
+          <FooterText href="#">
+            <img src={Google} className="App-Google" alt="Google" />
+          </FooterText>
+          <FooterText href="#">
+            <img src={Face} className="App-Face" alt="Face" />
+          </FooterText>
+        </SocialMenu>
+      </BottomContainer>
+    </MainContainer>
   );
 };
 

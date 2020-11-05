@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  Clientscontainer,
   WorkedWith,
   WorkedHeader,
   WorkedText,
   OurClients,
   Partners,
+  ClientsContainer,
 } from './Clients.style';
 import xiaomi from '../../assets/images/Xiaomi.svg';
 import Tinder from '../../assets/images/Tinder.svg';
@@ -15,16 +15,17 @@ import AMD from '../../assets/images/AMD.svg';
 const Clients = () => {
   return (
     <>
-      <Clientscontainer>
+      <ClientsContainer>
         <OurClients>Our Clients</OurClients>
-      </Clientscontainer>
-      <WorkedWith>
-        <WorkedHeader>— We worked with</WorkedHeader>
-        <WorkedText>
-          Our favorite brands are our friends! We help them to achieve their
-          goals, they help us to stay sharp.
-        </WorkedText>
-      </WorkedWith>
+
+        <WorkedWith>
+          <WorkedHeader>— We worked with</WorkedHeader>
+          <WorkedText>
+            Our favorite brands are our friends! We help them to <br /> achieve
+            their goals, they help us to stay sharp.
+          </WorkedText>
+        </WorkedWith>
+      </ClientsContainer>
       <Partners>
         <img src={xiaomi} className="App-xiaomi" alt="xiaomi" />
         <img src={Tinder} className="App-Tinder" alt="Tinder" />
