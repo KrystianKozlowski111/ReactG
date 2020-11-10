@@ -4,18 +4,23 @@ export const WorkTextContainer = styled.section`
   align-items: left;
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 474px;
-  padding-left: 126px;
+
+  padding-right: 5%;
+  padding-left: calc((100% - 1110px) / 2);
+  @media (max-width: 1110px) {
+    padding-left: 0;
+  }
 `;
 export const HeroContainer = styled.section`
   display: flex;
   align-items: left;
   justify-content: space-between;
   flex-direction: row;
-  max-width: 1121px;
+
+  position: relative;
 `;
 export const WorkHeader = styled.h1`
-  font-family: Fira Sans;
+  font-family: Fira Sans, sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +30,7 @@ export const WorkHeader = styled.h1`
 `;
 export const WorkText = styled.p`
   margin-top: -22px;
-  font-family: Fira Sans;
+  font-family: Fira Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -35,11 +40,12 @@ export const WorkText = styled.p`
 `;
 export const Placeholder = styled.div`
   position: relative;
+  max-width: 50%;
 `;
 export const Button = styled.button`
   display: inline-block;
   padding: 13px;
-  font-family: Fira Sans;
+  font-family: Fira Sans, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -56,8 +62,19 @@ export const Button = styled.button`
   border: 0px;
 `;
 export const VideoContainer = styled.div`
+  position: absolute;
   z-index: 8;
-  position: relative;
+  top: 50%;
+  left: 50%;
+
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
 `;
-export const PlayButton = styled.button``;
+export const PlayButton = styled.button`
+  position: absolute;
+  border: 0px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+`;

@@ -17,11 +17,16 @@ const Hero = () => {
     <>
       <HeroContainer>
         <WorkTextContainer>
-          <WorkHeader>Work around you and your team</WorkHeader>
+          <WorkHeader>
+            Work around you <br />
+            and your team
+          </WorkHeader>
           <WorkText>
-            From ads that dance or sing to MTV-like commercials, online
-            advertisers are now using a new type of technology “rich media” to
-            attract consumers.
+            From ads that dance or sing to MTV-like commercials,
+            <br />
+            online advertisers are now using a new type of
+            <br />
+            technology “rich media” to attract consumers.
           </WorkText>
           <Button>GET STARTED</Button>
         </WorkTextContainer>
@@ -33,11 +38,14 @@ const Hero = () => {
             alt="placeholder"
           />
         </Placeholder>
+        <VideoContainer>
+          {' '}
+          <img src={video} className="App-video" alt="video" />
+          <PlayButton>
+            <img src={playbutton} className="App-playbutton" alt="playbutton" />
+          </PlayButton>
+        </VideoContainer>
       </HeroContainer>
-      <VideoContainer>
-        {' '}
-        <img src={video} className="App-video" alt="video" />
-      </VideoContainer>
     </>
   );
 };
