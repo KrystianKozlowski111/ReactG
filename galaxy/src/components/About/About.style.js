@@ -28,17 +28,7 @@ export const AboutHeader = styled.h1`
   letter-spacing: -1px;
   text-align: left;
 `;
-export const AboutText = styled.p`
-  font-family: Fira Sans, sans-serif;
-  font-style: normal;
-  padding-top: 20px;
-  font-weight: normal;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 28px;
-  color: #222222;
-  opacity: 0.7;
-`;
+
 export const Placeholder = styled.div`
   position: relative;
 `;

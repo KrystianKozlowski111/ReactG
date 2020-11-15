@@ -11,6 +11,7 @@ export const TextContainer = styled.section`
     padding-left: 0;
   }
 `;
+export const MainContainer = styled.section``;
 export const Placeholder = styled.div`
   position: relative;
   max-width: 50%;

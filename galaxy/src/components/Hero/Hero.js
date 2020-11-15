@@ -6,9 +6,9 @@ import {
   WorkText,
   HeroContainer,
   Button,
-  PlayButton,
   VideoContainer,
 } from './Hero.style';
+import { PlayButton } from '../../assets/Global.style.js';
 import placeholder from '../../assets/images/placeholder.svg';
 import playbutton from '../../assets/images/playbutton.svg';
 import video from '../../assets/images/video.png';

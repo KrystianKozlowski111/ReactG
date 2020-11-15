@@ -6,13 +6,16 @@ import {
   Switcher,
   SwitcherText,
   PictureContainer,
-  Picture,
-  PlayButton,
   Footercontainer,
   FooterText,
   Button,
 } from './Works.style';
-import { HeaderC, WorkHeader } from '../../assets/Global.style.js';
+import {
+  PlayButton,
+  Picture,
+  HeaderC,
+  WorkHeader,
+} from '../../assets/Global.style.js';
 
 import Works2 from '../../assets/images/Works2.svg';
 import Works6 from '../../assets/images/Works6.svg';

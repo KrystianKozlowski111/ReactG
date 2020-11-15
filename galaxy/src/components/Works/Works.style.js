@@ -58,15 +58,7 @@ export const PictureContainer = styled.section`
 export const Picture = styled.div`
   position: relative;
 `;
-export const PlayButton = styled.button`
-  position: absolute;
-  border: 0px;
-  background-color: white;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-`;
+
 export const Footercontainer = styled.section`
   display: flex;
   align-items: center;

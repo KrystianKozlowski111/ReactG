@@ -7,6 +7,7 @@ import {
   UserContainer,
   Buttoncontainer,
   ButtonLR,
+  MainContainer,
 } from './Testimonials.style';
 import {
   UserHeader,
@@ -20,7 +21,7 @@ import LeftButton from '../../assets/images/LeftButton.svg';
 import RightButton from '../../assets/images/RightButton.svg';
 const Testimonials = () => {
   return (
-    <>
+    <MainContainer>
       <HeaderC>
         <WorkHeader>— testimonials</WorkHeader>
       </HeaderC>
@@ -64,7 +65,7 @@ const Testimonials = () => {
           />
         </Placeholder>
       </HeroContainer>
-    </>
+    </MainContainer>
   );
 };
 

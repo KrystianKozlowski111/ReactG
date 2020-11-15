@@ -4,7 +4,7 @@ export const WorkTextContainer = styled.section`
   align-items: left;
   justify-content: flex-start;
   flex-direction: column;
-
+  max-width: 1170px;
   padding-right: 5%;
   padding-left: calc((100% - 1110px) / 2);
   @media (max-width: 1110px) {
@@ -68,13 +68,4 @@ export const VideoContainer = styled.div`
   left: 50%;
 
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
-`;
-export const PlayButton = styled.button`
-  position: absolute;
-  border: 0px;
-  background-color: white;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
 `;

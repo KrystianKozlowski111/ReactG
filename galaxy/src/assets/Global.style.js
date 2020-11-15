@@ -27,6 +27,27 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #e0e0e0;
   }
 `;
+export const PictureContainer = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 135px;
+  max-width: 1110px;
+`;
+export const PlayButton = styled.button`
+  position: absolute;
+  border: 0px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+`;
+export const Picture = styled.div`
+  position: relative;
+`;
 export const HeaderC = styled.section`
   display: flex;
   align-items: center;
@@ -75,4 +96,27 @@ export const UserText = styled.p`
   line-height: 28px;
   color: #222222;
   opacity: 0.7;
+`;
+export const Text = styled.p`
+  font-family: Fira Sans, sans-serif;
+  font-style: normal;
+  padding-top: 20px;
+  font-weight: normal;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+`;
+export const AppContainer = styled.section`
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1170px;
+  padding-right: 5%;
+  padding-left: calc((100% - 1110px) / 2);
+  @media (max-width: 1110px) {
+    padding-left: 0;
+  }
 `;
