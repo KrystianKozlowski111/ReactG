@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  HeaderC,
-  WorkHeader,
   WorksContainer,
   Headercontainer,
   DiscoverHeader,
@@ -14,7 +12,8 @@ import {
   FooterText,
   Button,
 } from './Works.style';
-import Works1 from '../../assets/images/Works1.svg';
+import { HeaderC, WorkHeader } from '../../assets/Global.style.js';
+
 import Works2 from '../../assets/images/Works2.svg';
 import Works6 from '../../assets/images/Works6.svg';
 import Works3 from '../../assets/images/Works3.svg';

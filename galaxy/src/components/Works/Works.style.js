@@ -15,14 +15,6 @@ export const Headercontainer = styled.section`
   margin-bottom: 108px;
   justify-content: space-between;
 `;
-export const HeaderC = styled.section`
-  display: flex;
-  align-items: center;
-  max-width: 1110px;
-  margin: auto;
-
-  justify-content: space-between;
-`;
 export const Switcher = styled.section`
   display: flex;
   align-items: center;
@@ -44,17 +36,7 @@ export const SwitcherText = styled.button`
   background: none;
   border: none;
 `;
-export const WorkHeader = styled.h1`
-  font-family: Fira Sans, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #222222;
-  opacity: 0.7;
-`;
+
 export const DiscoverHeader = styled.h1`
   font-family: Fira Sans, sans-serif;
   font-style: normal;

@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Header,
   FeatureContainer,
   TextContainer,
   Text,
@@ -12,6 +11,7 @@ import {
   IconTextContainer,
   IconContainer,
 } from './Features.style';
+import { Header } from '../../assets/Global.style.js';
 import PlaceholderFeatures1 from '../../assets/images/PlaceholderFeatures1.svg';
 import PlaceholderFeatures2 from '../../assets/images/PlaceholderFeatures2.svg';
 import Icon100 from '../../assets/images/Icon100.svg';

@@ -46,7 +46,7 @@ export const UserContainer = styled.section`
   margin-top: 51px;
   display: flex;
   justify-content: flex-start;
-  max-width: 285px;
+  max-width: 290px;
 `;
 export const User = styled.div`
   position: relative;
@@ -56,23 +56,4 @@ export const UserTextContainer = styled.section`
   padding-left: 31px;
   justify-content: flex-start;
   flex-direction: column;
-`;
-export const UserHeader = styled.h1`
-  font-family: Fira Sans, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  margin: 0 auto;
-  line-height: 32px;
-  color: #222222;
-`;
-export const UserText = styled.p`
-  font-family: Fira Sans, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-  color: #222222;
-  opacity: 0.7;
 `;

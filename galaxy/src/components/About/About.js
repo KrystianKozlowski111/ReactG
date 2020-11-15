@@ -6,11 +6,11 @@ import {
   AboutText,
   Placeholder,
   User,
-  UserHeader,
-  UserText,
   UserContainer,
   UserTextContainer,
 } from './About.style';
+
+import { UserHeader, UserText } from '../../assets/Global.style.js';
 import placeholderAbout from '../../assets/images/placeholderAbout.svg';
 import eclipse from '../../assets/images/eclipse.png';
 const About = () => {
