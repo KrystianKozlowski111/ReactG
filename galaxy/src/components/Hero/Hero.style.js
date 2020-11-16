@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 export const WorkTextContainer = styled.section`
   display: flex;
-  align-items: left;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 1170px;
@@ -13,7 +12,6 @@ export const WorkTextContainer = styled.section`
 `;
 export const HeroContainer = styled.section`
   display: flex;
-  align-items: left;
   justify-content: space-between;
   flex-direction: row;
 

@@ -19,7 +19,6 @@ export const OurClients = styled.h1`
 `;
 export const WorkedWith = styled.section`
   display: flex;
-  align-items: left;
   justify-content: flex-start;
   flex-direction: column;
 `;

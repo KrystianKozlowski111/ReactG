@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 export const TextContainer = styled.section`
   display: flex;
-  align-items: left;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 350px;

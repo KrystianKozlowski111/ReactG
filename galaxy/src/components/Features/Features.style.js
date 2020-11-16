@@ -30,12 +30,10 @@ export const TextContainer = styled.section`
 export const FeatureContainer = styled.section`
   display: flex;
   position: relative;
-  align-items: left;
 `;
 export const RightContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: left;
 `;
 export const Placeholder1 = styled.div`
   position: relative;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 export const WorksContainer = styled.section`
   display: flex;
-  align-items: left;
   justify-content: space-between;
   flex-direction: row;
   margin: 0 auto;

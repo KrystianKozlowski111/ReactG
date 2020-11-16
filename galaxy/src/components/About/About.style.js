@@ -10,7 +10,6 @@ export const AboutTextContainer = styled.section`
 `;
 export const AboutContainer = styled.section`
   display: flex;
-  align-items: left;
   justify-content: space-between;
   flex-direction: row;
   margin: 0 auto;
