@@ -50,9 +50,9 @@ export const Picture = styled.div`
 `;
 export const HeaderC = styled.section`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1110px;
-  margin: auto;
+  margin: 0 auto;
 
   justify-content: space-between;
 `;
