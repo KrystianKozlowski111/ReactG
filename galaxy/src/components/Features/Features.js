@@ -10,6 +10,7 @@ import {
   IconText,
   IconTextContainer,
   IconContainer,
+  AppContainer,
 } from './Features.style';
 import { Header } from '../../assets/Global.style.js';
 import PlaceholderFeatures1 from '../../assets/images/PlaceholderFeatures1.svg';

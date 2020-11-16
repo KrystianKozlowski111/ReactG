@@ -119,4 +119,5 @@ export const AppContainer = styled.section`
   @media (max-width: 1110px) {
     padding-left: 0;
   }
+  padding-bottom: 140px;
 `;

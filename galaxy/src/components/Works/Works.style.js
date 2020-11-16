@@ -64,6 +64,7 @@ export const Footercontainer = styled.section`
   max-width: 1110px;
   margin: auto;
   justify-content: space-between;
+  padding-bottom: 248px;
 `;
 export const FooterText = styled.p`
   font-family: Fira Sans, sans-serif;

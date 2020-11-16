@@ -30,6 +30,12 @@ export const TextContainer = styled.section`
 export const FeatureContainer = styled.section`
   display: flex;
   position: relative;
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding-right: 5%;
+  }
+  padding-bottom: 202px;
 `;
 export const RightContainer = styled.section`
   display: flex;
@@ -45,7 +51,7 @@ export const Placeholder2 = styled.div`
   top: 5%;
   left: 10%;
 
-  filter: drop-shadow(30px 80px 180px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(20px 70px 170px rgba(0, 0, 0, 0.25));
 `;
 export const IconTextContainer = styled.section`
   display: flex;
@@ -73,4 +79,14 @@ export const IconContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+`;
+export const AppContainer = styled.section`
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: 1440px) {
+    margin: 0 auto;
+  }
 `;

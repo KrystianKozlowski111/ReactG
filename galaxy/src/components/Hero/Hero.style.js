@@ -3,9 +3,9 @@ export const WorkTextContainer = styled.section`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 1170px;
+  max-width: 1110px;
   padding-right: 5%;
-  padding-left: calc((100% - 1110px) / 2);
+
   @media (max-width: 1110px) {
     padding-left: 0;
   }
@@ -63,7 +63,7 @@ export const VideoContainer = styled.div`
   position: absolute;
   z-index: 8;
   top: 50%;
-  left: 50%;
+  left: 40%;
 
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
 `;

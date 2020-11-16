@@ -85,6 +85,7 @@ export const AwardsContainer = styled.section`
   justify-content: space-between;
   margin-top: 158px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 5%;
 `;
 export const AwardsPicture = styled.div``;
 

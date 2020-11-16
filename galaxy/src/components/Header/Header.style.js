@@ -7,6 +7,7 @@ export const Headercontainer = styled.section`
   margin: auto;
   padding-top: 59px;
   justify-content: space-between;
+  padding-bottom: 59px;
 `;
 export const Image = styled.div`
   width: 74.31px;
