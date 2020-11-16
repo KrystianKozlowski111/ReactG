@@ -7,6 +7,7 @@ import Clients from '../components/Clients';
 import Testimonials from '../components/Testimonials';
 import Features from '../components/Features';
 import Works from '../components/Works';
+import Services from '../components/Services';
 function HomePage() {
   return (
     <>
@@ -14,6 +15,7 @@ function HomePage() {
       <Header />
       <Hero />
       <About />
+      <Services />
       <Features />
       <Works />
       <Testimonials />
