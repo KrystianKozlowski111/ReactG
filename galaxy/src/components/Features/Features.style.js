@@ -58,10 +58,23 @@ max-width:100%;
 export const RightContainer = styled.section`
   display: flex;
   flex-direction: column;
+  ${Media.sm`
+  
+  padding-left:10px;
+  padding-right:10px;
+  
+  `}
 `;
 export const Placeholder1 = styled.div`
   position: relative;
   margin-right: 190px;
+  ${Media.sm`
+  padding-left:10px;
+  padding-right:10px;
+  margin-right:0;
+  max-width:100%;
+  
+  `}
 `;
 export const Placeholder2 = styled.div`
   position: absolute;
@@ -73,6 +86,8 @@ export const Placeholder2 = styled.div`
   ${Media.sm`
  position:relative;
  filter:none;
+  margin-left:-355px;
+ max-width:100%;
   `}
 `;
 export const IconTextContainer = styled.section`

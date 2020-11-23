@@ -10,6 +10,9 @@ export const ClientsContainer = styled.div`
   ${Media.md`
   flex-direction:column;
   align-items:center;
+  padding-right:10px;
+  padding-left: 10px;
+
 `}
 `;
 export const OurClients = styled.h1`
@@ -57,6 +60,6 @@ export const Partners = styled.section`
   flex-direction:column;
   align-items:center;
   flex-wrap: wrap;
-  gap:15px;
+  gap:60px;
 `}
 `;

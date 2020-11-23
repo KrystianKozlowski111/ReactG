@@ -45,12 +45,30 @@ export const Menu = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 59px;
+  ${Media.md`
+  padding-bottom:10px;
+  padding-top:10px;
+  `}
+  ${Media.sm`
+  gap:10px;
+  flex-wrap:wrap;
+  padding:5px 10px;
+  `}
 `;
 export const MenuFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 43px;
+  ${Media.md`
+  padding-bottom:10px;
+  
+  `}
+  ${Media.sm`
+  gap:10px;
+  flex-wrap:wrap;
+  padding:5px 10px;
+  `}
 `;
 export const SocialMenu = styled.div`
   display: flex;
@@ -85,7 +103,7 @@ export const Form = styled.div`
   ${Media.md`
   flex-direction:column;
   align-items:center;
-
+  gap:10px;
   `}
 `;
 export const Inputf = styled.input`

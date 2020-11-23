@@ -11,8 +11,8 @@ export const Headercontainer = styled.section`
   padding-bottom: 59px;
   ${Media.md`
   align-items:center;
-
-  
+  padding-left:15px;
+  padding-right:15px;
 `}
 `;
 export const Image = styled.div`

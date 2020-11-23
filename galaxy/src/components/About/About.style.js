@@ -8,6 +8,14 @@ export const AboutTextContainer = styled.section`
   padding-left: 126px;
   ${Media.md`
   padding-left: 10px;
+  padding-right:10px;
+
+`}
+  ${Media.sm`
+  max-width:100%;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0;
 `}
 `;
 export const AboutContainer = styled.section`
@@ -19,6 +27,9 @@ export const AboutContainer = styled.section`
   ${Media.md`
   flex-direction:column;
   align-items:center;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0;
 `}
 `;
 export const AboutHeader = styled.h1`
@@ -36,6 +47,11 @@ export const AboutHeader = styled.h1`
 
 export const Placeholder = styled.div`
   position: relative;
+  ${Media.sm`
+  max-width:100%;
+  padding-left:10px;
+  padding-right:10px;
+`}
 `;
 export const UserContainer = styled.section`
   margin-top: 51px;

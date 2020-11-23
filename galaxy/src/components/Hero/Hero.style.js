@@ -20,6 +20,8 @@ export const HeroContainer = styled.section`
   ${Media.md`
   flex-direction:column;
   align-items:center;
+  padding-left:10px;
+  padding-right:10px;
 `}
 `;
 export const WorkHeader = styled.h1`
@@ -47,6 +49,7 @@ export const Placeholder = styled.div`
   ${Media.md`
   max-width: 100%;
   width: 100%;
+  
 `}
 `;
 export const Button = styled.button`
@@ -67,6 +70,10 @@ export const Button = styled.button`
   max-width: 189px;
   max-height: 50px;
   border: 0px;
+  ${Media.md`
+  margin-bottom:15px;
+  
+`}
 `;
 export const VideoContainer = styled.div`
   position: absolute;
@@ -80,5 +87,6 @@ export const VideoContainer = styled.div`
   left: 50%;
   transform:translateX(-50%) translateY(50%);
 
+  max-width:95%;
 `}
 `;

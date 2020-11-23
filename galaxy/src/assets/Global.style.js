@@ -3,6 +3,8 @@ import { Media } from './Mixins.style';
 import styled from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   html{
+    overflow:hidden;
+    max-width:100%;
     ${Media.xxlg`
       font-size: 56.2%;
     `}
@@ -60,6 +62,10 @@ export const WorkHeader = styled.h1`
   text-transform: uppercase;
   color: #222222;
   opacity: 0.7;
+  ${Media.sm`
+  
+  padding-left:10px;
+  `}
 `;
 export const Header = styled.h1`
   font-family: Fira Sans, sans-serif;
@@ -117,5 +123,6 @@ export const AppContainer = styled.section`
   ${Media.sm`
   overflow:hidden;
   max-width:100%;
+  padding-left:10px;
   `}
 `;

@@ -98,6 +98,40 @@ const Services = () => {
                 },
               },
             ]}
+            breakpoints={{
+              900: {
+                plugins: [
+                  'infinite',
+                  {
+                    resolve: arrowsPlugin,
+                    options: {
+                      numberOfSlides: 1,
+                      arrowLeft: (
+                        <ButtonL>
+                          {' '}
+                          <img
+                            src={LeftButton}
+                            className="App-LeftButton"
+                            alt="LeftButton"
+                          />
+                        </ButtonL>
+                      ),
+                      arrowRight: (
+                        <ButtonR>
+                          {' '}
+                          <img
+                            src={RightButton}
+                            className="App-RightButton"
+                            alt="RightButton"
+                          />
+                        </ButtonR>
+                      ),
+                      addArrowClickHandler: true,
+                    },
+                  },
+                ],
+              },
+            }}
           >
             <ImageContainer>
               <PlayButton>

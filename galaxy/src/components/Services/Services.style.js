@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const TextContainer = styled.section`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 600px;
   margin-top: -40px;
+  ${Media.md`
+  margin-bottom:15px;
+  
+`}
 `;
 
 export const HeadContainer = styled.section`
@@ -17,6 +22,11 @@ export const HeadContainer = styled.section`
   @media (max-width: 1110px) {
     padding-left: 0;
   }
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+  
+`}
 `;
 
 export const Menu = styled.div`
@@ -74,6 +84,10 @@ export const App1Container = styled.section`
     padding-left: 0;
   }
   padding-bottom: 200px;
+  ${Media.sm`
+  padding-right:10px;
+  padding-left:10px;
+  `}
 `;
 export const ButtonL = styled.button`
   background: none;

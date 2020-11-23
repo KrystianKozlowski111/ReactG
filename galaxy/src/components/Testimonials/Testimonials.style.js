@@ -19,6 +19,7 @@ align-items:center;
   ${Media.sm`
 overflow:hidden;
 max-width:100%;
+padding-left:10px;
 `}
 `;
 export const Placeholder = styled.div`
@@ -28,6 +29,7 @@ export const Placeholder = styled.div`
   ${Media.sm`
   margin-left: 0px;
   max-width:100%;
+  
   `}
 `;
 export const HeroContainer = styled.section`

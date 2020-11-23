@@ -7,6 +7,7 @@ export const WorksContainer = styled.section`
   margin: 0 auto;
   max-width: 1110px;
 `;
+
 export const Headercontainer = styled.section`
   display: flex;
   align-items: center;
@@ -18,12 +19,22 @@ export const Headercontainer = styled.section`
   flex-direction:column;
   align-items:center;
 `}
+  ${Media.sm`
+  overflow:hidden;
+padding-left:10px;
+
+
+`}
 `;
 export const Switcher = styled.section`
   display: flex;
   align-items: center;
   max-width: 470px;
-
+  ${Media.sm`
+  
+  max-width:100%;
+  flex-wrap:wrap;
+  `}
   justify-content: space-between;
 `;
 export const SwitcherText = styled.button`
@@ -58,6 +69,12 @@ export const PictureContainer = styled.section`
   flex-direction: row;
   margin: 0 auto;
   max-width: 1110px;
+  ${Media.sm`
+  
+  padding-left:10px;
+  padding-right:10px;
+  
+  `}
 `;
 export const Picture = styled.div`
   position: relative;
@@ -73,6 +90,13 @@ export const Footercontainer = styled.section`
   ${Media.md`
   flex-direction:column;
   align-items:center;
+`}
+  ${Media.sm`
+  
+padding-left:10px;
+padding-right:10px;
+
+
 `}
 `;
 export const FooterText = styled.p`
