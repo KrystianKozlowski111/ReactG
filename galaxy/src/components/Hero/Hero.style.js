@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const WorkTextContainer = styled.section`
   display: flex;
   justify-content: flex-start;
@@ -16,6 +17,10 @@ export const HeroContainer = styled.section`
   flex-direction: row;
 
   position: relative;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
 `;
 export const WorkHeader = styled.h1`
   font-family: Fira Sans, sans-serif;
@@ -39,6 +44,10 @@ export const WorkText = styled.p`
 export const Placeholder = styled.div`
   position: relative;
   max-width: 50%;
+  ${Media.md`
+  max-width: 100%;
+  width: 100%;
+`}
 `;
 export const Button = styled.button`
   display: inline-block;
@@ -66,4 +75,10 @@ export const VideoContainer = styled.div`
   left: 40%;
 
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+  ${Media.md`
+  top: 50%;
+  left: 50%;
+  transform:translateX(-50%) translateY(50%);
+
+`}
 `;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const Header = styled.h1`
   font-family: Fira Sans, sans-serif;
   font-style: normal;
@@ -26,6 +27,15 @@ export const TextContainer = styled.section`
 
   flex-direction: column;
   max-width: 475px;
+  ${Media.md`
+  padding-top:180px;
+  width: 100%;
+`}
+  ${Media.sm`
+padding-top:10px;
+margin-top:-200px;
+
+`}
 `;
 export const FeatureContainer = styled.section`
   display: flex;
@@ -36,6 +46,14 @@ export const FeatureContainer = styled.section`
     padding-right: 5%;
   }
   padding-bottom: 202px;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
+  ${Media.sm`
+overflow:hidden;
+max-width:100%;
+`}
 `;
 export const RightContainer = styled.section`
   display: flex;
@@ -52,6 +70,10 @@ export const Placeholder2 = styled.div`
   left: 10%;
 
   filter: drop-shadow(20px 70px 170px rgba(0, 0, 0, 0.25));
+  ${Media.sm`
+ position:relative;
+ filter:none;
+  `}
 `;
 export const IconTextContainer = styled.section`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Media } from '../../assets/Mixins.style';
 export const ClientsContainer = styled.div`
   display: flex;
   padding-top: 102px;
@@ -7,6 +7,10 @@ export const ClientsContainer = styled.div`
   align-items: flex-start;
   max-width: 1110px;
   margin: auto;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
 `;
 export const OurClients = styled.h1`
   font-family: Fira Sans, sans-serif;
@@ -49,4 +53,10 @@ export const Partners = styled.section`
   justify-content: space-between;
   margin-top: 82px;
   margin-bottom: 137px;
+  ${Media.sm`
+  flex-direction:column;
+  align-items:center;
+  flex-wrap: wrap;
+  gap:15px;
+`}
 `;

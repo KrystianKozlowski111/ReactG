@@ -19,13 +19,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 54.2%;
     `}
   }
-  body {
-
-    margin: 0;
-    padding: 0;
-    overscroll-behavior-y: contain;
-    background-color: #e0e0e0;
-  }
+  
 `;
 export const PictureContainer = styled.section`
   display: flex;
@@ -120,4 +114,8 @@ export const AppContainer = styled.section`
     padding-left: 0;
   }
   padding-bottom: 140px;
+  ${Media.sm`
+  overflow:hidden;
+  max-width:100%;
+  `}
 `;

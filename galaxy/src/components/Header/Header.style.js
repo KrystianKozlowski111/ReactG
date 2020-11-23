@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const Headercontainer = styled.section`
   display: flex;
   align-items: center;
@@ -8,6 +9,11 @@ export const Headercontainer = styled.section`
   padding-top: 59px;
   justify-content: space-between;
   padding-bottom: 59px;
+  ${Media.md`
+  align-items:center;
+
+  
+`}
 `;
 export const Image = styled.div`
   width: 74.31px;

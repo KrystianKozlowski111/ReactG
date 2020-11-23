@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const WorksContainer = styled.section`
   display: flex;
   justify-content: space-between;
@@ -13,6 +14,10 @@ export const Headercontainer = styled.section`
   margin: auto;
   margin-bottom: 108px;
   justify-content: space-between;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
 `;
 export const Switcher = styled.section`
   display: flex;
@@ -65,6 +70,10 @@ export const Footercontainer = styled.section`
   margin: auto;
   justify-content: space-between;
   padding-bottom: 248px;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
 `;
 export const FooterText = styled.p`
   font-family: Fira Sans, sans-serif;

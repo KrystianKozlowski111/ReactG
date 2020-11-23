@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const Footercontainer = styled.section`
   display: flex;
   align-items: base-line;
@@ -8,11 +9,19 @@ export const Footercontainer = styled.section`
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   padding: 59px 0px 41px 0px;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+  flex-wrap: wrap;
+  `}
 `;
 export const MainContainer = styled.section`
   display: block;
   width: 100%;
   background: #515151;
+  ${Media.md`
+  width:100%;
+  `}
 `;
 export const BottomContainer = styled.section`
   display: flex;
@@ -21,6 +30,11 @@ export const BottomContainer = styled.section`
   max-width: 1170px;
   justify-content: space-between;
   padding: 35px 0px;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+  flex-wrap: wrap;
+  `}
 `;
 export const Image = styled.div`
   object-fit: contain;
@@ -68,6 +82,11 @@ export const FooterText = styled.a`
 export const Form = styled.div`
   display: flex;
   align-items: center;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+
+  `}
 `;
 export const Inputf = styled.input`
   padding: 10px;

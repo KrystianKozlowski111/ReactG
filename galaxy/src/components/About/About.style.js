@@ -1,12 +1,14 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const AboutTextContainer = styled.section`
   display: flex;
   align-items: flex-start;
-
   flex-direction: column;
-
   max-width: 474px;
   padding-left: 126px;
+  ${Media.md`
+  padding-left: 10px;
+`}
 `;
 export const AboutContainer = styled.section`
   display: flex;
@@ -14,6 +16,10 @@ export const AboutContainer = styled.section`
   flex-direction: row;
   margin: 0 auto;
   max-width: 1110px;
+  ${Media.md`
+  flex-direction:column;
+  align-items:center;
+`}
 `;
 export const AboutHeader = styled.h1`
   font-family: Fira Sans, sans-serif;
