@@ -31,6 +31,10 @@ export const PictureContainer = styled.section`
   flex-direction: row;
   margin-top: 135px;
   max-width: 1110px;
+  ${Media.md`
+  align-items:center;
+  justify-content: center;
+  `}
 `;
 export const PlayButton = styled.button`
   position: absolute;
@@ -51,6 +55,11 @@ export const HeaderC = styled.section`
   margin: 0 auto;
 
   justify-content: space-between;
+  ${Media.md`
+  padding-right:10px;
+  padding-left: 10px;
+
+`}
 `;
 export const WorkHeader = styled.h1`
   font-family: Fira Sans, sans-serif;

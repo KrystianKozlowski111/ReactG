@@ -23,6 +23,11 @@ export const OurClients = styled.h1`
   letter-spacing: -1px;
   text-align: left;
   margin: 0;
+  ${Media.md`
+  
+  padding-bottom: 10px;
+
+`}
 `;
 export const WorkedWith = styled.section`
   display: flex;
@@ -61,5 +66,11 @@ export const Partners = styled.section`
   align-items:center;
   flex-wrap: wrap;
   gap:60px;
+`}
+  ${Media.md`
+
+padding-right:10px;
+padding-left: 10px;
+
 `}
 `;

@@ -59,7 +59,7 @@ export const RightContainer = styled.section`
   display: flex;
   flex-direction: column;
   ${Media.sm`
-  
+  padding-top:350px;
   padding-left:10px;
   padding-right:10px;
   
@@ -68,26 +68,41 @@ export const RightContainer = styled.section`
 export const Placeholder1 = styled.div`
   position: relative;
   margin-right: 190px;
-  ${Media.sm`
-  padding-left:10px;
-  padding-right:10px;
-  margin-right:0;
+  ${Media.md`
+  margin-left:10px;
+  margin-right:10px;
+  margin-right:10;
   max-width:100%;
-  
+  overflow:hidden;
+  `}
+  ${Media.sm`
+  margin-left:10px;
+  margin-right:10px;
+  margin-right:10;
+  max-width:95%;
+  overflow:hidden;
   `}
 `;
 export const Placeholder2 = styled.div`
   position: absolute;
   z-index: 8;
-  top: 5%;
-  left: 10%;
-
+  top: 10%;
+  left: 25%;
   filter: drop-shadow(20px 70px 170px rgba(0, 0, 0, 0.25));
+  ${Media.md`
+  position:absolute;
+  top: 10%;
+  left: 25%;
+  height:10px;
+  filter:none;
+  max-width:80%;
+   `}
   ${Media.sm`
- position:relative;
- filter:none;
-  margin-left:-355px;
- max-width:100%;
+  position:absolute;
+  top: 5%;
+  left: 15%;
+  filter:none;
+   max-width:70%;
   `}
 `;
 export const IconTextContainer = styled.section`

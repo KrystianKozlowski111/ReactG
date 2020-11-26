@@ -57,8 +57,8 @@ export const Link = styled.a`
   text-decoration: none;
 `;
 export const ImageContainer = styled.div`
-  height: 500px;
-  width: 825px;
+  max-height: 500px;
+  max-width: 825px;
 `;
 export const PlayButton = styled.button`
   position: absolute;

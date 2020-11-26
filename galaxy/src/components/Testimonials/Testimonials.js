@@ -59,6 +59,7 @@ const Testimonials = () => {
         <Placeholder>
           {' '}
           <img
+            style={{ width: '100%' }}
             src={TestimonialsPng}
             className="App-Testimonials"
             alt="Testimonials"

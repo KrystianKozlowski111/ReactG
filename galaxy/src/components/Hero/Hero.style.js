@@ -48,8 +48,10 @@ export const Placeholder = styled.div`
   max-width: 50%;
   ${Media.md`
   max-width: 100%;
-  width: 100%;
-  
+ 
+  margin-left:10px;
+  margin-right:10px;
+  overflow:hidden;  
 `}
 `;
 export const Button = styled.button`
@@ -86,7 +88,7 @@ export const VideoContainer = styled.div`
   top: 50%;
   left: 50%;
   transform:translateX(-50%) translateY(50%);
-
-  max-width:95%;
+  overflow: hidden;
+  max-width:90%;
 `}
 `;

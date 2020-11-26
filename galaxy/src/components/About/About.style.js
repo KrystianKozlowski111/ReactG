@@ -51,6 +51,7 @@ export const Placeholder = styled.div`
   max-width:100%;
   padding-left:10px;
   padding-right:10px;
+  overflow: hidden;
 `}
 `;
 export const UserContainer = styled.section`

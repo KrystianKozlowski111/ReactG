@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import { Media } from '../../assets/Mixins.style';
 export const TextContainer = styled.section`
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 350px;
+  ${Media.md`
+  padding-bottom:20px;
+  `}
 `;
 
 export const HeadContainer = styled.section`
@@ -16,6 +20,11 @@ export const HeadContainer = styled.section`
   @media (max-width: 1110px) {
     padding-left: 0;
   }
+  ${Media.md`
+  align-items:center;
+  flex-direction:column;
+  justify-content: center;
+  `}
 `;
 export const SocialMenu = styled.div`
   display: flex;
@@ -37,6 +46,10 @@ export const WallP = styled.div`
   padding-top: 86px;
   padding-bottom: 23px;
   position: relative;
+  ${Media.md`
+  overflow:hidden;
+  max-width:100%;
+  `}
 `;
 export const Buttoncontainer = styled.section`
   display: flex;
@@ -44,6 +57,11 @@ export const Buttoncontainer = styled.section`
   max-width: 1110px;
 
   justify-content: space-between;
+  ${Media.md`
+  align-items:center;
+  flex-direction:column;
+  justify-content: center;
+  `}
 `;
 export const FooterText = styled.p`
   font-family: Fira Sans, sans-serif;
@@ -78,6 +96,9 @@ export const BottomTextContainer = styled.section`
   justify-content: flex-start;
   flex-direction: column;
   max-width: 540px;
+  ${Media.md`
+  margin-bottom:20px;
+  `}
 `;
 export const AwardsContainer = styled.section`
   display: flex;

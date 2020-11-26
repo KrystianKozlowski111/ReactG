@@ -15,11 +15,13 @@ export const MainContainer = styled.section`
   ${Media.md`
 flex-direction:column;
 align-items:center;
+padding-left:10px;
+padding-right:10px;
 `}
   ${Media.sm`
 overflow:hidden;
 max-width:100%;
-padding-left:10px;
+
 `}
 `;
 export const Placeholder = styled.div`
@@ -29,6 +31,11 @@ export const Placeholder = styled.div`
   ${Media.sm`
   margin-left: 0px;
   max-width:100%;
+  
+  `}
+  ${Media.md`
+  width:1500px;
+  margin-left:0;
   
   `}
 `;

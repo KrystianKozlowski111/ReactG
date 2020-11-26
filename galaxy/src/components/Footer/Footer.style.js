@@ -14,6 +14,9 @@ export const Footercontainer = styled.section`
   align-items:center;
   flex-wrap: wrap;
   `}
+  ${Media.lg`
+  margin:0px 15px
+  `}
 `;
 export const MainContainer = styled.section`
   display: block;
@@ -34,6 +37,9 @@ export const BottomContainer = styled.section`
   flex-direction:column;
   align-items:center;
   flex-wrap: wrap;
+  `}
+  ${Media.lg`
+  margin:0px 15px
   `}
 `;
 export const Image = styled.div`

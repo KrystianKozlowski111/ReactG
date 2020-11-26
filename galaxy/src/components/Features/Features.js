@@ -14,7 +14,7 @@ import {
 } from './Features.style';
 import { Header } from '../../assets/Global.style.js';
 import PlaceholderFeatures1 from '../../assets/images/PlaceholderFeatures1.svg';
-import PlaceholderFeatures2 from '../../assets/images/PlaceholderFeatures2.svg';
+import PlaceholderFeatures2 from '../../assets/images/placeholder22.png';
 import Icon100 from '../../assets/images/Icon100.svg';
 import Bagicon from '../../assets/images/Bagicon.svg';
 const Features = () => {
@@ -23,6 +23,7 @@ const Features = () => {
       <Placeholder1>
         {' '}
         <img
+          style={{ width: '100%' }}
           src={PlaceholderFeatures1}
           className="App-PlaceholderFeatures1"
           alt="PlaceholderFeatures1"
@@ -30,6 +31,7 @@ const Features = () => {
       </Placeholder1>
       <Placeholder2>
         <img
+          style={{ width: '100%' }}
           src={PlaceholderFeatures2}
           className="App-PlaceholderFeatures2"
           alt="PlaceholderFeatures2"

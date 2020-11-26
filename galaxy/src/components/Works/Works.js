@@ -39,28 +39,24 @@ const Works = () => {
           <SwitcherText>Films</SwitcherText>
         </Switcher>
       </Headercontainer>
-      <WorksContainer>
-        <PictureContainer>
+
+      <PictureContainer>
+        <img src={Works3} className="App-Works3" alt="Works3" />
+
+        <img src={Works2} className="App-Works2" alt="Works2" />
+        <Picture>
+          <PlayButton>
+            <img src={playbutton} className="App-playbutton" alt="playbutton" />
+          </PlayButton>
           <img src={Works3} className="App-Works3" alt="Works3" />
+        </Picture>
+        <img src={Works4} className="App-Works4" alt="Works4" />
 
-          <img src={Works2} className="App-Works2" alt="Works2" />
-          <Picture>
-            <PlayButton>
-              <img
-                src={playbutton}
-                className="App-playbutton"
-                alt="playbutton"
-              />
-            </PlayButton>
-            <img src={Works3} className="App-Works3" alt="Works3" />
-          </Picture>
-          <img src={Works4} className="App-Works4" alt="Works4" />
+        <img src={Works5} className="App-Works5" alt="Works5" />
 
-          <img src={Works5} className="App-Works5" alt="Works5" />
+        <img src={Works6} className="App-Works6" alt="Works6" />
+      </PictureContainer>
 
-          <img src={Works6} className="App-Works6" alt="Works6" />
-        </PictureContainer>
-      </WorksContainer>
       <Footercontainer>
         <FooterText>
           It picks up the words on the page and displays ads that are similar to

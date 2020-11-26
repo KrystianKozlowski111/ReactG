@@ -6,6 +6,10 @@ export const WorksContainer = styled.section`
   flex-direction: row;
   margin: 0 auto;
   max-width: 1110px;
+  ${Media.lg`
+  align-items:center;
+  justify-content: space-evenly;
+  `}
 `;
 
 export const Headercontainer = styled.section`
@@ -71,9 +75,14 @@ export const PictureContainer = styled.section`
   max-width: 1110px;
   ${Media.sm`
   
-  padding-left:10px;
-  padding-right:10px;
+  margin-left:10px;
+  margin-right:10px;
+  overflow:hidden;
   
+  `}
+  ${Media.lg`
+  align-items:center;
+  justify-content: space-evenly;
   `}
 `;
 export const Picture = styled.div`
