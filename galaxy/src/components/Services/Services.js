@@ -19,11 +19,8 @@ import {
   WorkHeader,
   AppContainer,
 } from '../../assets/Global.style.js';
-import Carousel, {
-  arrowsPlugin,
-  slidesToShowPlugin,
-} from '@brainhubeu/react-carousel';
-import '../../assets/styles/style.css';
+import 'swiper/swiper.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import playbutton from '../../assets/images/playbutton.svg';
 import Carousel1 from '../../assets/images/Carousel1.svg';
 import Carousel2 from '../../assets/images/Carousel2.svg';
@@ -60,94 +57,19 @@ const Services = () => {
       </AppContainer>
       <App1Container>
         <CarouselContainer>
-          <Carousel
-            plugins={[
-              'infinite',
-              {
-                resolve: slidesToShowPlugin,
-
-                options: {
-                  numberOfSlides: 1.6,
-                },
-              },
-              {
-                resolve: arrowsPlugin,
-                options: {
-                  numberOfSlides: 1.6,
-                  arrowLeft: (
-                    <ButtonL>
-                      {' '}
-                      <img
-                        src={LeftButton}
-                        className="App-LeftButton"
-                        alt="LeftButton"
-                      />
-                    </ButtonL>
-                  ),
-                  arrowRight: (
-                    <ButtonR>
-                      {' '}
-                      <img
-                        src={RightButton}
-                        className="App-RightButton"
-                        alt="RightButton"
-                      />
-                    </ButtonR>
-                  ),
-                  addArrowClickHandler: true,
-                },
-              },
-            ]}
-            breakpoints={{
-              900: {
-                plugins: [
-                  'infinite',
-                  {
-                    resolve: arrowsPlugin,
-                    options: {
-                      numberOfSlides: 1,
-                      arrowLeft: (
-                        <ButtonL>
-                          {' '}
-                          <img
-                            src={LeftButton}
-                            className="App-LeftButton"
-                            alt="LeftButton"
-                          />
-                        </ButtonL>
-                      ),
-                      arrowRight: (
-                        <ButtonR>
-                          {' '}
-                          <img
-                            src={RightButton}
-                            className="App-RightButton"
-                            alt="RightButton"
-                          />
-                        </ButtonR>
-                      ),
-                      addArrowClickHandler: true,
-                    },
-                  },
-                ],
-              },
-            }}
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
           >
-            <ImageContainer>
-              <PlayButton>
-                {' '}
-                <img
-                  src={playbutton}
-                  className="App-playbutton"
-                  alt="playbutton"
-                />
-              </PlayButton>
+            <SwiperSlide>
               <img src={Carousel1} />
-            </ImageContainer>
-            <ImageContainer>
+            </SwiperSlide>
+            <SwiperSlide>
               <img src={Carousel2} />
-            </ImageContainer>
-          </Carousel>
+            </SwiperSlide>
+          </Swiper>
         </CarouselContainer>
       </App1Container>
     </>
