@@ -4,11 +4,11 @@ import Features from '../components/Features';
 import styled from 'styled-components';
 
 storiesOf('Features', module).add('with test value', () => (
-  <EventItemWrapper>
+  <EventtItemWrapper>
     <Features>test value</Features>
-  </EventItemWrapper>
+  </EventtItemWrapper>
 ));
-const EventItemWrapper = styled.div`
+const EventtItemWrapper = styled.div`
   max-width: 1370px;
   width: 100%;
   margin: 0 auto;

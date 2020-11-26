@@ -19,11 +19,7 @@ import {
   WorkHeader,
   AppContainer,
 } from '../../assets/Global.style.js';
-import Carousel, {
-  arrowsPlugin,
-  slidesToShowPlugin,
-} from '@brainhubeu/react-carousel';
-import '../../assets/styles/style.css';
+import Slider from 'react-slick';
 import playbutton from '../../assets/images/playbutton.svg';
 import Carousel1 from '../../assets/images/Carousel1.svg';
 import Carousel2 from '../../assets/images/Carousel2.svg';
@@ -60,94 +56,27 @@ const Services = () => {
       </AppContainer>
       <App1Container>
         <CarouselContainer>
-          <Carousel
-            plugins={[
-              'infinite',
-              {
-                resolve: slidesToShowPlugin,
+          <Slider>
+            <div>
+              <ImageContainer>
+                <PlayButton>
+                  {' '}
+                  <img
+                    src={playbutton}
+                    className="App-playbutton"
+                    alt="playbutton"
+                  />
+                </PlayButton>
+                <img src={Carousel1} />
+              </ImageContainer>
+            </div>
 
-                options: {
-                  numberOfSlides: 1.6,
-                },
-              },
-              {
-                resolve: arrowsPlugin,
-                options: {
-                  numberOfSlides: 1.6,
-                  arrowLeft: (
-                    <ButtonL>
-                      {' '}
-                      <img
-                        src={LeftButton}
-                        className="App-LeftButton"
-                        alt="LeftButton"
-                      />
-                    </ButtonL>
-                  ),
-                  arrowRight: (
-                    <ButtonR>
-                      {' '}
-                      <img
-                        src={RightButton}
-                        className="App-RightButton"
-                        alt="RightButton"
-                      />
-                    </ButtonR>
-                  ),
-                  addArrowClickHandler: true,
-                },
-              },
-            ]}
-            breakpoints={{
-              900: {
-                plugins: [
-                  'infinite',
-                  {
-                    resolve: arrowsPlugin,
-                    options: {
-                      numberOfSlides: 1,
-                      arrowLeft: (
-                        <ButtonL>
-                          {' '}
-                          <img
-                            src={LeftButton}
-                            className="App-LeftButton"
-                            alt="LeftButton"
-                          />
-                        </ButtonL>
-                      ),
-                      arrowRight: (
-                        <ButtonR>
-                          {' '}
-                          <img
-                            src={RightButton}
-                            className="App-RightButton"
-                            alt="RightButton"
-                          />
-                        </ButtonR>
-                      ),
-                      addArrowClickHandler: true,
-                    },
-                  },
-                ],
-              },
-            }}
-          >
-            <ImageContainer>
-              <PlayButton>
-                {' '}
-                <img
-                  src={playbutton}
-                  className="App-playbutton"
-                  alt="playbutton"
-                />
-              </PlayButton>
-              <img src={Carousel1} />
-            </ImageContainer>
-            <ImageContainer>
-              <img src={Carousel2} />
-            </ImageContainer>
-          </Carousel>
+            <div>
+              <ImageContainer>
+                <img src={Carousel2} />
+              </ImageContainer>
+            </div>
+          </Slider>
         </CarouselContainer>
       </App1Container>
     </>
