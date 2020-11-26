@@ -23,6 +23,10 @@ overflow:hidden;
 max-width:100%;
 
 `}
+@media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 export const Placeholder = styled.div`
   position: relative;

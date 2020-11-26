@@ -11,6 +11,7 @@ export const AboutTextContainer = styled.section`
   padding-right:10px;
 
 `}
+
   ${Media.sm`
   max-width:100%;
   padding-left:10px;

@@ -8,7 +8,7 @@ export const WorkTextContainer = styled.section`
   padding-right: 5%;
 
   @media (max-width: 1110px) {
-    padding-left: 0;
+    padding-left: 10px;
   }
 `;
 export const HeroContainer = styled.section`
@@ -17,6 +17,7 @@ export const HeroContainer = styled.section`
   flex-direction: row;
 
   position: relative;
+
   ${Media.md`
   flex-direction:column;
   align-items:center;

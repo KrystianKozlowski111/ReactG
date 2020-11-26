@@ -1,4 +1,6 @@
 import React from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import {
   TextContainer,
   SocialMenu,
@@ -25,7 +27,27 @@ import Carousel1 from '../../assets/images/Carousel1.svg';
 import Carousel2 from '../../assets/images/Carousel2.svg';
 import LeftButton from '../../assets/images/LeftButton.svg';
 import RightButton from '../../assets/images/RightButton.svg';
+
 const Services = () => {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: (
+      <ButtonR>
+        {' '}
+        <img src={RightButton} className="App-RightButton" alt="RightButton" />
+      </ButtonR>
+    ),
+    prevArrow: (
+      <ButtonL>
+        {' '}
+        <img src={LeftButton} className="App-LeftButton" alt="LeftButton" />
+      </ButtonL>
+    ),
+  };
   return (
     <>
       <HeaderC>
@@ -56,26 +78,22 @@ const Services = () => {
       </AppContainer>
       <App1Container>
         <CarouselContainer>
-          <Slider>
-            <div>
-              <ImageContainer>
-                <PlayButton>
-                  {' '}
-                  <img
-                    src={playbutton}
-                    className="App-playbutton"
-                    alt="playbutton"
-                  />
-                </PlayButton>
-                <img src={Carousel1} />
-              </ImageContainer>
-            </div>
+          <Slider {...settings}>
+            <ImageContainer>
+              <PlayButton>
+                {' '}
+                <img
+                  src={playbutton}
+                  className="App-playbutton"
+                  alt="playbutton"
+                />
+              </PlayButton>
+              <img src={Carousel1} />
+            </ImageContainer>
 
-            <div>
-              <ImageContainer>
-                <img src={Carousel2} />
-              </ImageContainer>
-            </div>
+            <ImageContainer>
+              <img src={Carousel2} />
+            </ImageContainer>
           </Slider>
         </CarouselContainer>
       </App1Container>

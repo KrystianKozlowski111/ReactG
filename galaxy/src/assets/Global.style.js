@@ -60,6 +60,10 @@ export const HeaderC = styled.section`
   padding-left: 10px;
 
 `}
+  @media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 export const WorkHeader = styled.h1`
   font-family: Fira Sans, sans-serif;

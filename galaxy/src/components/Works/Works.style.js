@@ -29,6 +29,10 @@ padding-left:10px;
 
 
 `}
+@media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 export const Switcher = styled.section`
   display: flex;
@@ -80,6 +84,7 @@ export const PictureContainer = styled.section`
   overflow:hidden;
   
   `}
+
   ${Media.lg`
   align-items:center;
   justify-content: space-evenly;
@@ -107,6 +112,10 @@ padding-right:10px;
 
 
 `}
+@media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 export const FooterText = styled.p`
   font-family: Fira Sans, sans-serif;

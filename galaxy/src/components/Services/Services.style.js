@@ -10,6 +10,10 @@ export const TextContainer = styled.section`
   margin-bottom:15px;
   
 `}
+  @media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
 export const HeadContainer = styled.section`
@@ -59,6 +63,7 @@ export const Link = styled.a`
 export const ImageContainer = styled.div`
   max-height: 500px;
   max-width: 825px;
+  position: relative;
 `;
 export const PlayButton = styled.button`
   position: absolute;
@@ -71,7 +76,12 @@ export const PlayButton = styled.button`
 `;
 export const CarouselContainer = styled.div`
   position: relative;
+  @media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
+
 export const App1Container = styled.section`
   display: flex;
 
@@ -95,8 +105,11 @@ export const ButtonL = styled.button`
   outline: 0;
   padding: 0;
   position: absolute;
-  left: 0%;
-  bottom: -100px;
+  margin-top: 270px;
+  left: 0px;
+  &::before {
+    content: '';
+  }
 `;
 export const ButtonR = styled.button`
   background: none;
@@ -104,6 +117,9 @@ export const ButtonR = styled.button`
   outline: 0;
   padding: 0;
   position: absolute;
-  left: 75px;
-  bottom: -100px;
+  margin-top: 270px;
+  left: 65px;
+  &::before {
+    content: '';
+  }
 `;

@@ -14,6 +14,10 @@ export const ClientsContainer = styled.div`
   padding-left: 10px;
 
 `}
+  @media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 export const OurClients = styled.h1`
   font-family: Fira Sans, sans-serif;
@@ -73,4 +77,8 @@ padding-right:10px;
 padding-left: 10px;
 
 `}
+@media (max-width: 1110px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
