@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Media } from '../../assets/Mixins.style';
+
 export const TextContainer = styled.section`
   display: flex;
   justify-content: flex-start;
@@ -74,6 +75,13 @@ export const PlayButton = styled.button`
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 `;
+export const Buttoncontainer = styled.section`
+  display: flex;
+  align-items: center;
+  max-width: 125px;
+  justify-content: space-between;
+  margin-top: 12px;
+`;
 export const CarouselContainer = styled.div`
   position: relative;
   @media (max-width: 1110px) {
@@ -104,20 +112,14 @@ export const ButtonL = styled.button`
   border: none;
   outline: 0;
   padding: 0;
-  position: absolute;
-  margin-top: 270px;
-  left: 0px;
-  &::before {
-    content: '';
-  }
 `;
 export const ButtonR = styled.button`
   background: none;
   border: none;
   outline: 0;
-  padding: 0;
+
   position: absolute;
-  margin-top: 270px;
+
   left: 65px;
   &::before {
     content: '';

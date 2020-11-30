@@ -15,7 +15,7 @@ export const Footercontainer = styled.section`
   flex-wrap: wrap;
   `}
   ${Media.lg`
-  margin:0px 15px
+  margin:0px 15px;
   `}
 `;
 export const MainContainer = styled.section`
@@ -39,7 +39,7 @@ export const BottomContainer = styled.section`
   flex-wrap: wrap;
   `}
   ${Media.lg`
-  margin:0px 15px
+  margin:0px 15px;
   `}
 `;
 export const Image = styled.div`

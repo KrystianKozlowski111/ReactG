@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Footer from '../components/Footer';
+import Footer from './Footer';
 
 storiesOf('Footer', module).add('with test value', () => (
   <Footer>test value</Footer>

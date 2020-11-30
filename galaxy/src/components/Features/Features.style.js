@@ -45,7 +45,9 @@ export const FeatureContainer = styled.section`
     max-width: 1170px;
     padding-right: 5%;
   }
+
   padding-bottom: 202px;
+
   ${Media.md`
   flex-direction:column;
   align-items:center;
@@ -64,10 +66,18 @@ export const RightContainer = styled.section`
   padding-right:10px;
   
   `}
+  ${Media.lg`
+  margin-right:10px;
+  
+  `}
 `;
 export const Placeholder1 = styled.div`
   position: relative;
   margin-right: 190px;
+  ${Media.lg`
+  margin-left:10px;
+  
+  `}
   ${Media.md`
   margin-left:10px;
   margin-right:10px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Hero from '../components/Hero';
+import Hero from './Hero';
 import styled from 'styled-components';
 
 storiesOf('Hero', module).add('with test value', () => (

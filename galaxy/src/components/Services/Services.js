@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
@@ -14,6 +14,7 @@ import {
   PlayButton,
   ButtonL,
   ButtonR,
+  Buttoncontainer,
 } from './Services.style';
 import {
   Header,
@@ -27,26 +28,14 @@ import Carousel1 from '../../assets/images/Carousel1.svg';
 import Carousel2 from '../../assets/images/Carousel2.svg';
 import LeftButton from '../../assets/images/LeftButton.svg';
 import RightButton from '../../assets/images/RightButton.svg';
-
 const Services = () => {
+  const sliderRef = useRef(null);
   var settings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: (
-      <ButtonR>
-        {' '}
-        <img src={RightButton} className="App-RightButton" alt="RightButton" />
-      </ButtonR>
-    ),
-    prevArrow: (
-      <ButtonL>
-        {' '}
-        <img src={LeftButton} className="App-LeftButton" alt="LeftButton" />
-      </ButtonL>
-    ),
   };
   return (
     <>
@@ -57,7 +46,7 @@ const Services = () => {
         <HeadContainer>
           <TextContainer>
             <Header>
-              We love work hard and explore new things that’s why we cover lot
+              We love work hard and explore new things that's why we cover lot
               of things. Check our service list and view details
             </Header>
           </TextContainer>
@@ -78,7 +67,7 @@ const Services = () => {
       </AppContainer>
       <App1Container>
         <CarouselContainer>
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             <ImageContainer>
               <PlayButton>
                 {' '}
@@ -88,17 +77,39 @@ const Services = () => {
                   alt="playbutton"
                 />
               </PlayButton>
-              <img src={Carousel1} />
+              <img style={{ width: '100%' }} src={Carousel1} />
             </ImageContainer>
-
             <ImageContainer>
-              <img src={Carousel2} />
+              <img style={{ width: '100%' }} src={Carousel2} />
             </ImageContainer>
           </Slider>
+          <Buttoncontainer>
+            <ButtonR
+              onClick={() => {
+                sliderRef.current.slickNext();
+              }}
+            >
+              <img
+                src={RightButton}
+                className="App-RightButton"
+                alt="RightButton"
+              />
+            </ButtonR>
+            <ButtonL
+              onClick={() => {
+                sliderRef.current.slickPrev();
+              }}
+            >
+              <img
+                src={LeftButton}
+                className="App-LeftButton"
+                alt="LeftButton"
+              />
+            </ButtonL>
+          </Buttoncontainer>
         </CarouselContainer>
       </App1Container>
     </>
   );
 };
-
 export default Services;
