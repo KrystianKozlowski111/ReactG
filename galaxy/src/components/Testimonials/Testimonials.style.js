@@ -32,6 +32,7 @@ export const Placeholder = styled.div`
   position: relative;
   max-width: 50%;
   margin-left: 125px;
+  margin-right: 5px;
   ${Media.sm`
   margin-left: 0px;
   max-width:100%;

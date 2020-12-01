@@ -47,6 +47,7 @@ export const WorkText = styled.p`
 export const Placeholder = styled.div`
   position: relative;
   max-width: 50%;
+  overflow: hidden;
   ${Media.lg`
   max-width: 100%;
  

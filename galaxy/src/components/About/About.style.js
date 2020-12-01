@@ -48,6 +48,12 @@ export const AboutHeader = styled.h1`
 
 export const Placeholder = styled.div`
   position: relative;
+  ${Media.lg`
+
+  padding-left:10px;
+ 
+ 
+`}
   ${Media.sm`
   max-width:100%;
   padding-left:10px;

@@ -45,13 +45,16 @@ export const BottomContainer = styled.section`
 export const Image = styled.div`
   object-fit: contain;
   margin: auto 0;
+  padding: 5px 10px;
 `;
 export const Menu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 59px;
+
   ${Media.md`
+
   padding-bottom:10px;
   padding-top:10px;
   `}
@@ -65,6 +68,7 @@ export const MenuFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5px 10px;
   gap: 43px;
   ${Media.md`
   padding-bottom:10px;
@@ -106,6 +110,7 @@ export const FooterText = styled.a`
 export const Form = styled.div`
   display: flex;
   align-items: center;
+  padding: 0px 10px;
   ${Media.md`
   flex-direction:column;
   align-items:center;

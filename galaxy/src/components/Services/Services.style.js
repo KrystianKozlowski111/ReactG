@@ -84,6 +84,10 @@ export const Buttoncontainer = styled.section`
 `;
 export const CarouselContainer = styled.div`
   position: relative;
+  margin-right: 30px;
+  ${Media.sm`
+  margin-right: 5px;
+  `}
   @media (max-width: 1110px) {
     padding-left: 10px;
     padding-right: 10px;

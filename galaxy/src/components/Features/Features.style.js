@@ -74,6 +74,7 @@ export const RightContainer = styled.section`
 export const Placeholder1 = styled.div`
   position: relative;
   margin-right: 190px;
+  padding-left:10px;
   ${Media.lg`
   margin-left:10px;
   
