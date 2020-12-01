@@ -77,6 +77,8 @@ export const PictureContainer = styled.section`
   flex-direction: row;
   margin: 0 auto;
   max-width: 1110px;
+  padding-right: 15px;
+  padding-left: 15px;
   ${Media.sm`
   
   margin-left:10px;
